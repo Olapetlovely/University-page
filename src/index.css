@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #F5FCFF;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.container {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.btn {
+  background-color: #fff;
+  color: #212121;
+  padding: 14px 25px;
+  font-size: 17px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  gap: 10px;
+}
+
+.btn:hover {
+  background-color: #c6e6f0;
+}
+
+.btn.dark-btn {
+  background-color: #0e4d55;
+  color: #fff;
+}
+
+.btn.dark-btn:hover {
+  background-color: #0d3a41;
+}
+
+.up-icon {
+  position: fixed;
+  top: 87%;
+  right: 4%;
+  font-size: 20px;
+  background: #0e4d55fa;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.up-icon:hover {
+  background-color: #032d33;
+}
+
+/* --- media querry --- */
+
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .btn {
+    padding: 14px 22px;
+  }
+
+}

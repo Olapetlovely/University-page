@@ -1,0 +1,110 @@
+nav {
+    width: 100%;
+    height: 110px;
+    color: #ffffff;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.colord-nav {
+    background-color: #0e4d55;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container .logo-icon {
+    font-size: 100px;
+    margin-top: 15px;
+}
+
+.logo-container h1 {
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style-type: none;
+    align-items: center;
+}
+
+ul .btn {
+    font-weight: 500;
+}
+
+nav .menu {
+    display: none;
+}
+
+/* --- media querry --- */
+
+@media (max-width: 1000px) {
+    .logo-container .logo-icon {
+        font-size: 80px;
+    }
+
+    .logo-container h1 {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 15px;
+        text-align: center;
+    }
+
+}
+
+
+/* ---- media query ------ */
+
+@media (max-width: 840px) {
+    nav {
+        padding: 15px 0;
+    }
+
+    nav ul {
+        position: fixed;
+        display: block;
+        top: 0;
+        right: -30px;
+        background-color: #0e4d55a9;
+        z-index: -50;
+        width: 200px;
+        padding-top: 70px;
+        transition: 0.5s;
+    }
+
+    nav ul li {
+        margin: 25px 40px;
+        text-align: left;
+        transition: all 0.25s ease-in-out;
+    }
+
+    nav ul li:first-of-type {
+        margin-top: 50px;
+    }
+
+    nav ul li:hover {
+        transform: scale(1.1);
+        color: #ffffff;
+    }
+
+    nav .menu {
+        display: block;
+        font-size: 23px;
+    }
+
+    .hide-mobile-menu {
+        right: -200px;
+    }
+}

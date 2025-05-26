@@ -1,0 +1,108 @@
+.contact {
+    margin: 5% auto 5rem;
+    max-width: 90%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    color: #2c2a2a;
+}
+
+.contact-col h3 {
+    color: #0e4d55;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.contact-col h3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-col h3 span {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.contact-col p {
+    max-width: 450px;
+    list-style: 0.3;
+}
+
+.contact-col ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.contact-col ul li {
+    display: flex;
+}
+
+.contact-col ul li span {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.contact form input,
+.contact textarea {
+    display: block;
+    width: 90%;
+    background-color: #dfedf0;
+    border: 0;
+    outline: 0;
+    margin: 5px 0 15px 0;
+    border-radius: 5px;
+    padding: 8px;
+    color: #052327;
+    font-size: 16px;
+}
+
+.contact form ::placeholder,
+.contact textarea::placeholder {
+    font-size: 16px;
+    color: #052327a4;
+
+}
+
+.contact-col .send {
+    margin-top: 10px;
+    color: rgb(22, 155, 22);
+    font-size: 19px;
+    display: flex;
+}
+
+.contact-col .submit {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-col .errors {
+    color: red;
+    margin: -15px 0 10px 0;
+    font-size: 15px;
+}
+
+/* ---- media query ------ */
+
+@media (max-width: 750px) {
+    .contact {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 558px) {
+
+    .contact form input,
+    .contact textarea,
+    .contact-col .submit {
+        width: 100%;
+    }
+}

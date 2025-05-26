@@ -1,0 +1,33 @@
+.hero {
+        width: 100%;
+        min-height: 100vh;
+        background: linear-gradient(rgba(81, 196, 216, 0.158), rgba(81, 196, 216, 0.329)), url("../../assets/img/pexels-george-pak-7972353.jpg");
+        background-size: cover;
+        background-position: center;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.hero-text {
+        text-align: center;
+        max-width: 800px;
+}
+
+.hero-text h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+}
+
+.hero-text p {
+        max-width: 700px;
+        margin: 10px auto 20px;
+        font-weight: 600;
+        line-height: 1.4
+}
+
+.hero-text span {
+        margin-top: 5px;
+        font-size: 18px;
+}
