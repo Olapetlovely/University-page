@@ -25,14 +25,6 @@ const Testimonials = () => {
         setCurrentIndex(nextIndex);
     };
 
-    /*  const handlePrevSlide = () => {
-         const slider = sliderRef.current;
-         const slideWidth = slider.clientWidth;
-         const prevIndex = (currentIndex - 1 + slider.children.length) % slider.children.length;
-         slider.style.transform = `translateX(-${slideWidth * prevIndex}px)`;
-         setCurrentIndex(prevIndex);
-     }; */
-
     const handlePrevSlide = () => {
         const slider = sliderRef.current;
         const slideWidth = slider.clientWidth;

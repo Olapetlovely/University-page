@@ -64,9 +64,6 @@ nav .menu {
 
 }
 
-
-/* ---- media query ------ */
-
 @media (max-width: 840px) {
     nav {
         padding: 15px 0;
@@ -76,9 +73,10 @@ nav .menu {
         position: fixed;
         display: block;
         top: 0;
+        bottom: 0;
         right: -30px;
-        background-color: #0e4d55a9;
-        z-index: -50;
+        background-color: #0e4d55;
+        z-index: -5;
         width: 200px;
         padding-top: 70px;
         transition: 0.5s;
